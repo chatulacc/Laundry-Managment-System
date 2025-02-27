@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" id="WebApp_ID" version="2.4">
+	<display-name>New</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+		<servlet-name>Insert</servlet-name>
+		<servlet-class>LMS_Package.packageInsert</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>packageRead</display-name>
+		<servlet-name>packageRead</servlet-name>
+		<servlet-class>LMS_Package.packageRead</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Insert</servlet-name>
+		<url-pattern>/insert</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>packageRead</servlet-name>
+		<url-pattern>/packageRead</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	
+	
+	<servlet>
+		<servlet-name>Read</servlet-name>
+		<servlet-class>LMS_Package.packageRead</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>packageDelete</display-name>
+		<servlet-name>packageDelete</servlet-name>
+		<servlet-class>LMS_Package.packageDelete</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Read</servlet-name>
+		<url-pattern>/read</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>packageDelete</servlet-name>
+		<url-pattern>/packageDelete</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet-mapping>
+		<servlet-name>Update</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Update</servlet-name>
+		<servlet-class>LMS_Package.packageUpdate</servlet-class>
+	</servlet>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<servlet>
+		<servlet-name>Delete</servlet-name>
+		<servlet-class>LMS_Package.packageDelete</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>packageUpdate</display-name>
+		<servlet-name>packageUpdate</servlet-name>
+		<servlet-class>LMS_Package.packageUpdate</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Delete</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>packageUpdate</servlet-name>
+		<url-pattern>/packageUpdate</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	  <servlet>
+         	<servlet-name>insert</servlet-name>
+         	<servlet-class>lmsOrder.OrderInsert</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+         	<servlet-name>insert</servlet-name>
+         	<url-pattern>/placeOrderinsert</url-pattern>
+         </servlet-mapping>
+         
+         
+         <servlet>
+         	<servlet-name>PickupReadServelet</servlet-name>
+         	<servlet-class>lmsOrder.PickupReadServelet</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+         	<servlet-name>PickupReadServelet</servlet-name>
+         	<url-pattern>/placeOrderread</url-pattern>
+         </servlet-mapping>
+         
+        
+        <servlet>
+        	<servlet-name>UpdateServelet</servlet-name>
+        	<servlet-class>lmsOrder.UpdateServelet</servlet-class>
+        </servlet>
+        
+        <servlet-mapping>
+        	<servlet-name>UpdateServelet</servlet-name>
+        	<url-pattern>/placeOrderupdate</url-pattern>
+        </servlet-mapping>
+        
+        
+        
+        
+        
+        <servlet>
+        	<servlet-name>deleteServelet</servlet-name>
+        	<servlet-class>lmsOrder.deleteServelet</servlet-class>
+        </servlet>
+        
+        <servlet-mapping>
+        	<servlet-name>deleteServelet</servlet-name>
+        	<url-pattern>/placeOrderdelete</url-pattern>
+        </servlet-mapping>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+     <servlet>
+    	<servlet-name>LoginS</servlet-name>
+    	<servlet-class>oop_login.LoginS</servlet-class>
+     </servlet>
+    <servlet-mapping>
+    	<servlet-name>LoginS</servlet-name>
+    	<url-pattern>/login</url-pattern>
+    </servlet-mapping>
+         
+         
+         
+         
+    <servlet>
+    	<servlet-name>customerCreate</servlet-name>
+    	<servlet-class>oop_login.customerCreate</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>customerCreate</servlet-name>
+    	<url-pattern>/loginInsert</url-pattern>
+    </servlet-mapping>
+         
+         
+    <servlet>
+		<servlet-name>updateCustomerS</servlet-name>
+		<servlet-class>oop_login.updateCustomerS</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateCustomerS</servlet-name>
+		<url-pattern>/loginUpdate</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteCustomerS</servlet-name>
+		<servlet-class>oop_login.deleteCustomerS</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteCustomerS</servlet-name>
+		<url-pattern>/loginDelete</url-pattern>
+	</servlet-mapping>
+          
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 <servlet>
+         	<servlet-name>insertR</servlet-name>
+         	<servlet-class>PackageRumeth.InsertServeletR</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+         	<servlet-name>insertR</servlet-name>
+         	<url-pattern>/insertR</url-pattern>
+         </servlet-mapping>
+         
+         
+         
+         <servlet>
+         	<servlet-name>ReadServeletR</servlet-name>
+         	<servlet-class>PackageRumeth.ReadServeletR</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+         	<servlet-name>ReadServeletR</servlet-name>
+         	<url-pattern>/readR</url-pattern>
+         </servlet-mapping>
+         
+         
+         
+         <servlet>
+         	<servlet-name>DeleteServeletR</servlet-name>
+         	<servlet-class>PackageRumeth.DeleteServeletR</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+         	<servlet-name>DeleteServeletR</servlet-name>
+         	<url-pattern>/deleteR</url-pattern>
+         </servlet-mapping>
+         
+         
+         
+         <servlet>
+         	<servlet-name>UpdateServeletR</servlet-name>
+         	<servlet-class>PackageRumeth.UpdateServeletR</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+         	<servlet-name>UpdateServeletR</servlet-name>
+         	<url-pattern>/updateR</url-pattern>
+         </servlet-mapping>
+         
+         
+	
+	
+	
+	
+	
+</web-app>
+
